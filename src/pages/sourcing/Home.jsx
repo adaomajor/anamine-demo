@@ -58,7 +58,7 @@ export default function SourcingHome() {
         <div className="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
           <Link to="/" className="flex items-center gap-3 font-extrabold text-orange-600 hover:text-orange-700 transition">
             <img src={logo} className="h-8 rounded" alt="AnaMine Logo" />
-            <span className="text-xl tracking-tight">AnaMine Sourcing</span>
+            <span className="text-xl tracking-tight">{t('sourcing.title')}</span>
           </Link>
 
           <LanguageSwitcher />
@@ -69,7 +69,7 @@ export default function SourcingHome() {
       <nav className="max-w-7xl mx-auto w-full px-6 py-6">
         <div className="bg-white rounded-2xl border border-gray-200 p-4 shadow-sm">
           <ul className="flex flex-wrap gap-4 text-sm font-bold">
-            <li><Link className="text-orange-600 px-4 py-2 bg-orange-50 rounded-xl" to="/sourcing">Home</Link></li>
+            <li><Link className="px-4 py-2 bg-orange-50 text-orange-600 rounded-xl" to="/sourcing">{t('nav.home')}</Link></li>
             <li><Link className="text-gray-500 hover:text-black px-4 py-2" to="/sourcing/about">About</Link></li>
             <li><Link className="text-gray-500 hover:text-black px-4 py-2" to="/sourcing/products">Products</Link></li>
             <li><Link className="text-gray-500 hover:text-black px-4 py-2" to="/sourcing/news">News</Link></li>
@@ -86,20 +86,20 @@ export default function SourcingHome() {
           <div className="absolute inset-0 bg-black/10 mix-blend-overlay pointer-events-none" />
           <div className="relative z-10 max-w-3xl space-y-6">
             <span className="inline-block px-3 py-1 bg-white/20 backdrop-blur-sm rounded-full text-xs font-bold uppercase tracking-wider">
-              Angola-Turkey Heavy Trade Corridor
+              {t('sourcing.home.hero_tag')}
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-black leading-tight tracking-tight">
-              Global Industrial Sourcing & Supply Chain Solutions
+              {t('sourcing.home.hero_title')}
             </h1>
             <p className="text-orange-50 max-w-2xl text-lg leading-relaxed">
-              AnaMine Comercio e Serviços LDA secures raw minerals, chemical agents, steel-reinforced conveyor networks, and specialized heavy MRO spares for mining operators across Africa.
+              {t('sourcing.home.hero_desc')}
             </p>
             <div className="pt-4 flex gap-4">
               <Link to="/sourcing/products" className="px-6 py-3 bg-white text-orange-700 font-bold rounded-xl shadow-md hover:bg-orange-50 transition">
-                Explore Catalog
+                {t('sourcing.home.hero_catalog')}
               </Link>
               <Link to="/sourcing/contact" className="px-6 py-3 bg-orange-700/50 hover:bg-orange-700/70 border border-white/20 font-bold rounded-xl transition">
-                Request Bulk Quote
+                {t('sourcing.home.hero_quote')}
               </Link>
             </div>
           </div>
@@ -108,9 +108,9 @@ export default function SourcingHome() {
         {/* INTEGRATED MARITIME PIPELINE TIMELINE */}
         <section className="space-y-8">
           <div className="text-center max-w-3xl mx-auto space-y-3">
-            <h2 className="text-3xl font-bold text-gray-900 tracking-tight">Our Direct Sourcing & Logistics Pipeline</h2>
+            <h2 className="text-3xl font-bold text-gray-900 tracking-tight">{t('sourcing.home.pipeline_title')}</h2>
             <p className="text-gray-500 text-sm leading-relaxed">
-              We eliminate intermediaries by auditing manufacturers on-site in Turkey and executing rapid, customs-cleared maritime routes straight to mining depots in Angola.
+              {t('sourcing.home.pipeline_desc')}
             </p>
           </div>
 
@@ -142,11 +142,11 @@ export default function SourcingHome() {
                 OEM Machinery Fleet Compatibility
               </h2>
               <p className="text-gray-500 text-sm max-w-2xl leading-relaxed">
-                We supply technical MRO consumables fully compatible with international mining fleets. Every item arrives with certified material warranties and serial catalog tracking.
+                {t('sourcing.home.oem_desc')}
               </p>
             </div>
             <Link to="/sourcing/contact" className="px-5 py-2.5 bg-orange-50 text-orange-700 hover:bg-orange-100 font-bold rounded-xl text-sm transition">
-              Verify Part Code
+              {t('sourcing.home.oem_verify')}
             </Link>
           </div>
 
@@ -162,7 +162,7 @@ export default function SourcingHome() {
 
         {/* INDUSTRIAL SERVICES SECTOR MATRIX */}
         <section className="space-y-8">
-          <h2 className="text-3xl font-bold text-gray-900 text-center tracking-tight">Key Sourcing Capabilities</h2>
+          <h2 className="text-3xl font-bold text-gray-900 text-center tracking-tight">{t('sourcing.home.capabilities_title')}</h2>
 
           <div className="grid md:grid-cols-3 gap-6">
 
@@ -174,9 +174,9 @@ export default function SourcingHome() {
                 alt="Mining Extraction"
               />
               <div className="p-8 space-y-4">
-                <h3 className="font-bold text-xl text-gray-900 group-hover:text-orange-600 transition-colors">Mining & Excavation</h3>
+                <h3 className="font-bold text-xl text-gray-900 group-hover:text-orange-600 transition-colors">{t('sourcing.home.cap1_title')}</h3>
                 <p className="text-gray-500 text-xs leading-relaxed">
-                  Direct supply of wear-resistant crusher plates, steel-reinforced conveyor rubbers, grinding media, flotation frothers, and specialized chemical extractors for diamond and ore extraction.
+                  {t('sourcing.home.cap1_desc')}
                 </p>
               </div>
             </div>
@@ -189,9 +189,9 @@ export default function SourcingHome() {
                 alt="MRO Spares"
               />
               <div className="p-8 space-y-4">
-                <h3 className="font-bold text-xl text-gray-900 group-hover:text-orange-600 transition-colors">MRO & Machinery Spares</h3>
+                <h3 className="font-bold text-xl text-gray-900 group-hover:text-orange-600 transition-colors">{t('sourcing.home.cap2_title')}</h3>
                 <p className="text-gray-500 text-xs leading-relaxed">
-                  Automotive components, engine parts, high-pressure seals, planetary gears, and heavy hydraulic valves sourced directly from Turkey's leading manufacturers for Angolan machinery fleets.
+                  {t('sourcing.home.cap2_desc')}
                 </p>
               </div>
             </div>
@@ -204,9 +204,9 @@ export default function SourcingHome() {
                 alt="Oil and Gas"
               />
               <div className="p-8 space-y-4">
-                <h3 className="font-bold text-xl text-gray-900 group-hover:text-orange-600 transition-colors">Oil & Gas Infrastructure</h3>
+                <h3 className="font-bold text-xl text-gray-900 group-hover:text-orange-600 transition-colors">{t('sourcing.home.cap3_title')}</h3>
                 <p className="text-gray-500 text-xs leading-relaxed">
-                  Bulk mechanical procurement, pipe fittings, heavy-duty industrial valves, pressure vessels, and refinery maintenance compounds built under ISO 9001 quality compliance.
+                  {t('sourcing.home.cap3_desc')}
                 </p>
               </div>
             </div>
@@ -220,25 +220,25 @@ export default function SourcingHome() {
           <div className="space-y-6">
             <div className="inline-flex items-center gap-1.5 px-3 py-1 bg-orange-50 border border-orange-200 text-orange-700 text-xs font-bold rounded-full">
               <Activity size={12} className="animate-pulse" />
-              Operational Efficiency Driven by Lean
+              {t('sourcing.home.lean_tag')}
             </div>
             <h2 className="text-3xl font-black text-gray-900 tracking-tight">
-              MRO Procurement & Supply Chain Strategy
+              {t('sourcing.home.lean_title')}
             </h2>
 
             <p className="text-gray-500 text-sm leading-relaxed">
-              We optimize logistics networks using Lean Six Sigma principles. By auditing database levels, automating warehouse restocking points, and aligning transport lead times, we significantly mitigate production stockouts.
+              {t('sourcing.home.lean_desc')}
             </p>
 
             <div className="grid grid-cols-2 gap-6 pt-4 border-t border-gray-100">
               <div className="border-l-4 border-orange-500 pl-4 space-y-1">
-                <p className="text-3xl font-black text-gray-900">35k+</p>
-                <p className="text-xs text-gray-400 font-semibold uppercase tracking-wider">Spares Delivered</p>
+                <p className="text-3xl font-black text-gray-900">{t('sourcing.home.stat1_value')}</p>
+                <p className="text-xs text-gray-400 font-semibold uppercase tracking-wider">{t('sourcing.home.stat1_label')}</p>
               </div>
 
               <div className="border-l-4 border-orange-500 pl-4 space-y-1">
-                <p className="text-3xl font-black text-gray-900">15+</p>
-                <p className="text-xs text-gray-400 font-semibold uppercase tracking-wider">Years Active Trade</p>
+                <p className="text-3xl font-black text-gray-900">{t('sourcing.home.stat2_value')}</p>
+                <p className="text-xs text-gray-400 font-semibold uppercase tracking-wider">{t('sourcing.home.stat2_label')}</p>
               </div>
             </div>
           </div>
